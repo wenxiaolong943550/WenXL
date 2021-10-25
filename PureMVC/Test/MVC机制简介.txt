@@ -1,0 +1,13 @@
+数据结构
+IDictionary<string,IList<IObserver>> m_observerMap
+IDictionary<string,IMediator> m_mediatorMap
+IDictionary<string,Type> m_command
+分类
+Controller 注册，执行，移除，判断有无命令。加入observer需要用到view
+View 注册，移除，判断有无中介。注册，移除，判断有无observer。接收到通知执行对应的observer。
+外观
+包含 view controller
+起始
+facad.instance.registermediator(new imediator())
+facad.instance.registercommand(notification,type icommand);
+facad.instance.sendnotification(notification name);

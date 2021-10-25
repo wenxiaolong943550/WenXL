@@ -1,0 +1,14 @@
+﻿Demo1ContextView 启动框架
+Demo1Context 对框架内的组件进行绑定
+其中分为 M数据 V显示 C命令 Mgr管理器 和开始
+
+MgrMVCS
+injectionBinder.Bind<AudioManager>().To<AudioManager>().ToSingleton();
+injectionBinder.Bind<ScoreModel>().To<ScoreModel>().ToSingleton();
+mediationBinder.Bind<CubeView>().To<CubeMediator>();//完成view和mediator的绑定
+commandBinder.Bind(Demo1CommandEvent.RequestScore).To<RequestScoreCommand>();
+injectionBinder.Bind<IScoreService>().To<ScoreService>().ToSingleton();//表示这个对象只会在整个工程中生成一个
+
+View 窗口基类
+Mediator 窗口注册基类
+需要的任何内容，都是通过dispatcher
