@@ -96,7 +96,7 @@ namespace XHFrameWork
         /// <summary>
         /// UI预设。
         /// </summary>
-        public const string UI_PREFAB = "Prefabs/";
+        public const string UI_PREFAB = "UIPrefab/Prefabs/";
         /// <summary>
         /// UI小控件预设。
         /// </summary>
@@ -108,7 +108,7 @@ namespace XHFrameWork
         /// <summary>
         /// icon路径
         /// </summary>
-        public const string UI_IOCN_PATH = "UI/Icon/";
+        public const string UI_IOCN_PATH = "UIPrefab/UI/Icon/";
 
         public static string GetPrefabPathByType(EnumUIType _uiType)
         {
